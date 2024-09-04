@@ -1,27 +1,21 @@
-const { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLList } = require('graphql');
-const SoccerField = require('../models/SoccerField');
-const SoccerFieldType = new GraphQLObjectType({
-    name: 'SoccerField',
-    fields: () => ({
-        id: { type: GraphQLString },
-        name: { type: GraphQLString },
-        location: { type: GraphQLString },
-        description: { type: GraphQLString },
-    }),
-});
+const { gql } = require('apollo-server-express');
 
-const RootQuery = new GraphQLObjectType({
-    name: 'RootQueryType',
-    fields: {
-        fields: {
-            type: new GraphQLList(SoccerFieldType),
-            resolve(parent, args) {
-                return SoccerField.find({});
-            },
-        },
-    },
-});
+const typeDefs = gql`
+    type SoccerField {
+        id: ID!
+        name: String!
+        location: String!
+        description: String
+        createdAt: String
+    }
 
-module.exports = new GraphQLSchema({
-    query: RootQuery,
-});
+    type Query {
+        getFields: [SoccerField]
+    }
+
+    type Mutation {
+        addField(name: String!, location: String!, description: String): SoccerField
+    }
+`;
+
+module.exports = typeDefs;
