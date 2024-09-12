@@ -1,49 +1,11 @@
 # Final-Project-
 
-
-
-
 <h3 align="center">Futbol Field Finder!</h3>
 
   <p align="center">
     A project that will help fellow soccer players to find the right field at the right time!
     <br />
-    
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
 
 <!-- GETTING STARTED -->
 
@@ -67,8 +29,6 @@
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
